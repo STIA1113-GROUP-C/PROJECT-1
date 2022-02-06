@@ -1,0 +1,704 @@
+Good Morning!
+How could we call you?
+Thomas
+Hi! Thomas Welcome to GROUP6 COMPANY!!!
+Which following of service do you like?
+1.Bread
+Price Calculation for Bread
+Bill Payment
+
+2.Cake
+Calculation for mass of ingredients to make cake for 1 month
+
+3.Rice
+Calculate the yield.
+Calculate the next harvest amount.
+Arranging the inventory.
+
+4.Dessert
+Finance calculation and statement of dessert shop 
+
+5.Fruits
+Purchasing seeds application
+
+0.Exit
+Please enter a number : 
+1
+Hi,Welcome to HO JUN HAN service! Thomas
+Enter your password: 12345
+Your password is correct.
+Options to access:
+1)Price Calculation for Bread
+2)Bill Payment
+Enter the option that want to access: 1
+
+Enter price of 1kg flour for one packet: RM15
+Enter price of 1kg sugar for one packet: RM10
+Enter price of egg for one dozen: RM12
+Enter price of 11g yeast for one packet: RM11
+Enter price of 1Litre milk for one carton: RM10
+Enter price of 250g butter for one packet: RM10
+Enter price of chocolate for one bar: RM20
+Enter price of 500g garlic for one bag: RM5
+Enter price of 325g buttermilk for one carton: RM13
+Enter price of 300g red bean for one bag: RM2
+
+Cost of chocolate breads is: RM14.04
+Cost of garlic bread is: RM8.30
+Cost of butter sugar bread is: RM8.77
+Cost of red bean bread is: RM8.28
+
+Price of chocolate bread is: RM16.85
+Price of garlic bread is: RM11.20
+Price of butter sugar bread is: RM11.83
+Price of red bean bread is: RM10.76
+Do you want to continue to other food or drink?
+1.Yes 2.No
+Please enter a number : 1
+Which following of service do you like?
+1.Bread
+Price Calculation for Bread
+Bill Payment
+
+2.Cake
+Calculation for mass of ingredients to make cake for 1 month
+
+3.Rice
+Calculate the yield.
+Calculate the next harvest amount.
+Arranging the inventory.
+
+4.Dessert
+Finance calculation and statement of dessert shop 
+
+5.Fruits
+Purchasing seeds application
+
+0.Exit
+Please enter a number : 
+1
+Hi,Welcome to HO JUN HAN service! Thomas
+Enter your password: 12345
+Your password is correct.
+Options to access:
+1)Price Calculation for Bread
+2)Bill Payment
+Enter the option that want to access: 2
+
+Chocolate bread: RM6.12
+Garlic bread: RM4.11
+Butter sugar bread: RM4.12
+Red bean bread: RM4.52
+
+Do you have membership card?
+0 = NO
+1 = YES
+Enter number: 1
+Enter the membership card number: 12345
+
+Quantity of chocolate bread: 2
+Quantity of garlic bread: 3
+Quantity of butter sugar bread: 1
+Quantity of red bean bread: 4
+
+Total price      : RM46.77
+Discount received: RM4.68
+Price to be paid : RM42.09
+
+Amount received: RM100
+Change 	       : RM57.91
+Do you want to continue to other food or drink?
+1.Yes 2.No
+Please enter a number : 1
+Which following of service do you like?
+1.Bread
+Price Calculation for Bread
+Bill Payment
+
+2.Cake
+Calculation for mass of ingredients to make cake for 1 month
+
+3.Rice
+Calculate the yield.
+Calculate the next harvest amount.
+Arranging the inventory.
+
+4.Dessert
+Finance calculation and statement of dessert shop 
+
+5.Fruits
+Purchasing seeds application
+
+0.Exit
+Please enter a number : 
+2
+Hi,Welcome to DANIEL FIKREY service! Thomas
+*    *    *   * * *  *        * *       *       * * * * *   * * *   
+*    *    *   *      *      *        *     *    *   *   *   *       
+*   * *   *   * *    *     *       *         *  *   *   *   * *     
+ * *   * *    *      *      *        *     *    *   *   *   *       
+  *     *     * * *  * * *    * *       *       *   *   *   * * *   
+
+                        *         *        *                        
+                      *   *     *   *    *   *                      
+                 *********************************                  
+                 *                               *                  
+                 *     *   *   *   *   *   *     *                  
+                 * * *   *   *   *   *   *   * * *                  
+                 *                               *                  
+                 *********************************                  
+                 * * * * * * * * * * * * * * * * *                  
+                 *********************************                  
+
+This Programme Will Calculate The Mass or Number of Ingredients for 1 Month
+
+Please enter the number of sale of the cake day by day in one week :
+Sales : 3
+Sales : 3
+Sales : 3
+Sales : 3
+Sales : 3
+Sales : 3
+Sales : 3
+
+****************************************************
+*                                                  *
+*     The total of cake sale for one week is 21    *
+* The average of number cake sale for one day is 3 *
+*                                                  *
+****************************************************
+
+Please enter the number of your ingredients : 2
+
+****************************************************
+
+Please enter your ingredients :
+* flour
+* egg
+
+****************************************************
+
+Please enter the mass of each ingredient to make one cake : 
+flour : 150
+egg : 200
+
+****************************************************
+
+Please enter the mass of remaining stock of each ingredients :
+flour : 300
+egg : 450
+
+**************************
+      The results       
+ flour : 13200.0 kg 
+ egg : 17550.0 kg 
+**************************
+
+Do you want to add more the ingredient???
+If you want to add more the amount of the ingredient , please enter 1
+If you want to stay with the amount of the ingredient, please enter 0
+0
+
+**************************
+flour : 13200.0
+egg : 17550.0
+
+**************************
+
+Thank you for using our service
+
+Do you want to continue to other food or drink?
+1.Yes 2.No
+Please enter a number : 1
+Which following of service do you like?
+1.Bread
+Price Calculation for Bread
+Bill Payment
+
+2.Cake
+Calculation for mass of ingredients to make cake for 1 month
+
+3.Rice
+Calculate the yield.
+Calculate the next harvest amount.
+Arranging the inventory.
+
+4.Dessert
+Finance calculation and statement of dessert shop 
+
+5.Fruits
+Purchasing seeds application
+
+0.Exit
+Please enter a number : 
+3
+Hi,Welcome to HO WAI KIAT service! Thomas
+Hi,what service do you need?
+1:Calculate the yield.
+2:Calculate the next harvest amount.
+3:Arranging the inventory.
+0:Exit.
+Please enter the number : 1
+
+Please enter the weight in sample unit(kg/10m2)
+Enter the weight of Black rice:
+11
+Enter the weight of Jasmine rice:
+22
+Enter the weight of Brown rice:
+33
+Enter the weight of Red Cargo rice:
+44
+Enter the weight of Sticky rice:
+55
+Enter the weight of Long grain white rice:
+66
+Please enter the area of the farm of each type of rice (hectare)
+Enter the area of Black rice farm:
+1
+Enter the area of Jasmine rice farm:
+2
+Enter the area of Brown rice farm:
+3
+Enter the area of Red Cargo rice farm:
+4
+Enter the area of Sticky rice farm:
+5
+Enter the area of Long grain white rice farm:
+6
+
+************************************************
+*The formula of kg/ha is kg/10m2 x 1000 = kg/ha*
+*The formula of kg is kg/ha x hectare = kg     *
+*The yield of each type of rice in kg          *
+************************************************
+
+Black rice :11000.00kg
+Jasmine rice :44000.00kg
+Brown rice :99000.00kg
+Red Cargo rice :176000.00kg
+Sticky rice :275000.00kg
+Long grain white rice :396000.00kg
+
+**********************************************
+*The formula of 1 kg/ha is 2.2lbs/ha         *
+*The formula of lbs is lbs/ha x hectare = lbs*
+*The yield of each type of rice in lbs       *
+**********************************************
+
+Black rice :24200.00lbs
+Jasmine rice :96800.00lbs
+Brown rice :217800.00lbs
+Red Cargo rice :387200.00lbs
+Sticky rice :605000.00lbs
+Long grain white rice :871200.00lbs
+
+Hi,what service do you need?
+1:Calculate the yield.
+2:Calculate the next harvest amount.
+3:Arranging the inventory.
+0:Exit.
+Please enter the number : 2
+
+Please enter the current yield of Black rice(kg/ha)
+11
+Please enter the current yield of Jasmine rice(kg/ha)
+22
+Please enter the current yield of Brown rice(kg/ha)
+33
+Please enter the current yield of Red Cargo rice(kg/ha)
+44
+Please enter the current yield of Sticky rice(kg/ha)
+55
+Please enter the current yield of Long grain white rice(kg/ha)
+66
+Please select the percentage by following type of factors
+Climate
+Spring: +10%
+Summer: +10%
+Autumn: -10%
+Winter: +5%
+Enter the percentage(%)
+10
+Government policy
+Tax: -5%
+Allowance: +10%
+Enter the percentage(%)
+-5
+Human Resources
+Enough: +10%
+Lack: -10%
+Enter the percentage(%)
+10
+Cost of production
+Increase: -5%
+Decrease: +5%
+Enter the percentage(%)
+5
+The next harvest amount of each of the rice
+The amount of the black rice:13.20kg/ha
+The amount of the Jasmine rice:26.40kg/ha
+The amount of the Brown rice:39.60kg/ha
+The amount of the Red Cargo rice:52.80kg/ha
+The amount of the Sticky rice:66.00kg/ha
+The amount of the Long grain white rice:79.20kg/ha
+
+Hi,what service do you need?
+1:Calculate the yield.
+2:Calculate the next harvest amount.
+3:Arranging the inventory.
+0:Exit.
+Please enter the number : 3
+
+Select an SERVICE : 
+1. ENTER THE INITIAL INVENTORY.
+2. ENTER THE CURRENT INVENTORY.
+3. CALCULATE THE FINAL INVENTORY.
+4. CHECKING THE INVENTORY OF THE RICE
+0.BACK
+Enter a number : 1
+
+Please enter the initial inventory(kg/ha) in this order.
+1.Black rice(GRADE A)
+2.Black rice(GRADE B)
+3.Black rice(GRADE C)
+4.Jasmine rice(GRADE A)
+5.Jasmine rice(GRADE B)
+6.Jasmine rice(GRADE C)
+7.Brown rice(GRADE A)
+8.Brown rice(GRADE B)
+9.Brown rice(GRADE C)
+10.Red Cargo rice(GRADE A)
+11.Red Cargo rice(GRADE B)
+12.Red Cargo rice(GRADE C)
+13.Sticky rice(GRADE A)
+14.Sticky rice(GRADE B)
+15.Sticky rice(GRADE C)
+16.Long grain white rice(GRADE A)
+17.Long grain white rice(GRADE B)
+18.Long grain white rice(GRADE C)
+1
+2
+3
+4
+5
+6
+7
+8
+9
+9
+8
+7
+6
+5
+4
+3
+2
+1
+
+Select an SERVICE : 
+1. ENTER THE INITIAL INVENTORY.
+2. ENTER THE CURRENT INVENTORY.
+3. CALCULATE THE FINAL INVENTORY.
+4. CHECKING THE INVENTORY OF THE RICE
+0.BACK
+Enter a number : 2
+
+Please enter the current inventory(kg/ha) in this order.
+1.Black rice(GRADE A)
+2.Black rice(GRADE B)
+3.Black rice(GRADE C)
+4.Jasmine rice(GRADE A)
+5.Jasmine rice(GRADE B)
+6.Jasmine rice(GRADE C)
+7.Brown rice(GRADE A)
+8.Brown rice(GRADE B)
+9.Brown rice(GRADE C)
+10.Red Cargo rice(GRADE A)
+11.Red Cargo rice(GRADE B)
+12.Red Cargo rice(GRADE C)
+13.Sticky rice(GRADE A)
+14.Sticky rice(GRADE B)
+15.Sticky rice(GRADE C)
+16.Long grain white rice(GRADE A)
+17.Long grain white rice(GRADE B)
+18.Long grain white rice(GRADE C)
+9
+8
+7
+6
+5
+4
+3
+2
+1
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+Select an SERVICE : 
+1. ENTER THE INITIAL INVENTORY.
+2. ENTER THE CURRENT INVENTORY.
+3. CALCULATE THE FINAL INVENTORY.
+4. CHECKING THE INVENTORY OF THE RICE
+0.BACK
+Enter a number : 3
+
+The final inventory(kg/ha). 
+1.Black rice(GRADE A) : 10.0 kg/ha
+2.Black rice(GRADE B) : 10.0 kg/ha
+3.Black rice(GRADE C) : 10.0 kg/ha
+4.Jasmine rice(GRADE A) : 10.0 kg/ha
+5.Jasmine rice(GRADE B) : 10.0 kg/ha
+6.Jasmine rice(GRADE C) : 10.0 kg/ha
+7.Brown rice(GRADE A) : 10.0 kg/ha
+8.Brown rice(GRADE B) : 10.0 kg/ha
+9.Brown rice(GRADE C) : 10.0 kg/ha
+10.Red Cargo rice(GRADE A) : 10.0 kg/ha
+11.Red Cargo rice(GRADE B) : 10.0 kg/ha
+12.Red Cargo rice(GRADE C) : 10.0 kg/ha
+13.Sticky rice(GRADE A) : 10.0 kg/ha
+14.Sticky rice(GRADE B) : 10.0 kg/ha
+15.Sticky rice(GRADE C) : 10.0 kg/ha
+16.Long grain white rice(GRADE A) : 10.0 kg/ha
+17.Long grain white rice(GRADE B) : 10.0 kg/ha
+18.Long grain white rice(GRADE C) : 10.0 kg/ha
+
+Select an SERVICE : 
+1. ENTER THE INITIAL INVENTORY.
+2. ENTER THE CURRENT INVENTORY.
+3. CALCULATE THE FINAL INVENTORY.
+4. CHECKING THE INVENTORY OF THE RICE
+0.BACK
+Enter a number : 4
+
+Please enter the number of the rice you want to check.
+1.Black rice(GRADE A)
+2.Black rice(GRADE B)
+3.Black rice(GRADE C)
+4.Jasmine rice(GRADE A)
+5.Jasmine rice(GRADE B)
+6.Jasmine rice(GRADE C)
+7.Brown rice(GRADE A)
+8.Brown rice(GRADE B)
+9.Brown rice(GRADE C)
+10.Red Cargo rice(GRADE A)
+11.Red Cargo rice(GRADE B)
+12.Red Cargo rice(GRADE C)
+13.Sticky rice(GRADE A)
+14.Sticky rice(GRADE B)
+15.Sticky rice(GRADE C)
+16.Long grain white rice(GRADE A)
+17.Long grain white rice(GRADE B)
+18.Long grain white rice(GRADE C)
+Enter integer between 1-18 : 17
+
+Long grain white rice(GRADE B) : 10.0 kg/ha
+
+Select an SERVICE : 
+1. ENTER THE INITIAL INVENTORY.
+2. ENTER THE CURRENT INVENTORY.
+3. CALCULATE THE FINAL INVENTORY.
+4. CHECKING THE INVENTORY OF THE RICE
+0.BACK
+Enter a number : 0
+
+
+
+Hi,what service do you need?
+1:Calculate the yield.
+2:Calculate the next harvest amount.
+3:Arranging the inventory.
+0:Exit.
+Please enter the number : 0
+
+ok,you're exit.
+Thank you by using our service.
+Goodbye!
+
+
+Do you want to continue to other food or drink?
+1.Yes 2.No
+Please enter a number : 1
+Which following of service do you like?
+1.Bread
+Price Calculation for Bread
+Bill Payment
+
+2.Cake
+Calculation for mass of ingredients to make cake for 1 month
+
+3.Rice
+Calculate the yield.
+Calculate the next harvest amount.
+Arranging the inventory.
+
+4.Dessert
+Finance calculation and statement of dessert shop 
+
+5.Fruits
+Purchasing seeds application
+
+0.Exit
+Please enter a number : 
+4
+Hi,Welcome to KOR JUN XIANG application! Thomas
+Enter how many types of desserts you sell in your store: 3
+Enter the 3 type of desserts :
+milk
+chocolate
+ice cream
+
+Price of the milk : RM10
+Cost of ingredients of the milk : RM8
+Quantity of the milk sold : 40
+
+Price of the chocolate : RM20
+Cost of ingredients of the chocolate : RM11
+Quantity of the chocolate sold : 30
+
+Price of the ice cream : RM10
+Cost of ingredients of the ice cream : RM6
+Quantity of the ice cream sold : 50
+
+Have you hired staff? (Yes or No)
+Y
+Enter the number of employees you hired : 2
+Enter the employee salary : RM1200
+Enter the rent payment per month : RM1000
+Enter the utilities fee for this month : RM120
+Enter the transport fee for this month : RM120
+
+Desserts detail:
+1. milk 	Price: RM10.0 	Quantity Sold: 40 	Cost: RM8.0 	Gross Profit: RM2.0
+2. chocolate 	Price: RM20.0 	Quantity Sold: 30 	Cost: RM11.0 	Gross Profit: RM9.0
+3. ice cream 	Price: RM10.0 	Quantity Sold: 50 	Cost: RM6.0 	Gross Profit: RM4.0
+
+	 FINANCIAL STATEMENT
+	**************************************************************************
+	 TOTAL SALES    	   = RM1500.0
+	 TOTAL COST OF INGREDIENTS = RM950.0
+	______________________________________________
+	 TOTAL GROSS PROFIT 	   = RM550.0
+	 TOTAL OTHER COST 	= RM3640.0
+	______________________________________________
+	 NET INCOME 		= RM-3090.0
+	**************************************************************************
+
+"Your company is losing money, and if you continue to operate, you will face bankruptcy."
+
+
+Do you want to continue to other food or drink?
+1.Yes 2.No
+Please enter a number : 1
+Which following of service do you like?
+1.Bread
+Price Calculation for Bread
+Bill Payment
+
+2.Cake
+Calculation for mass of ingredients to make cake for 1 month
+
+3.Rice
+Calculate the yield.
+Calculate the next harvest amount.
+Arranging the inventory.
+
+4.Dessert
+Finance calculation and statement of dessert shop 
+
+5.Fruits
+Purchasing seeds application
+
+0.Exit
+Please enter a number : 
+5
+Hi,Welcome to NURLAILATUL AQILAH service! Thomas
+Please enter your name : ThomasHo
+Please enter your state : Perak
+Please enter your gender : male
+Please enter your age : 20
+
+Welcome to the Green Eagle Seed Application,ThomasHo
+
+You have a notification from the application !
+Hello ThomasHo
+Feel free to check the seeds we offer !
+* * * * * * * * * * * *
+MENU
+Type of seed      * Price (200g) * Price (500g) 
+**************************************************************
+Apple             *    RM60      *   RM110      
+Premium Apple     *    RM70      *   RM120      
+Strawberry        *    RM80      *   RM150      
+Premium Strawberry*    RM90      *   RM160      
+Grape             *    RM50      *   RM100      
+Premium Grape     *    RM60      *   RM110      
+Orange            *    RM45      *    RM90      
+Premium Orange    *    RM55      *   RM100      
+**************************************************************
+
+Please enter the type of seed you want to buy : Apple
+Choose either 200g or 500g : 500
+Enter the price of seed you want to buy : RM60
+How many bag of seed you want to buy ? : 5
+* * * * * * * * 
+Please enter the second type of seed you want : Grape
+Choose either 200g or 500g : 200
+Enter the price of seed you want to buy : RM100
+How many bag of seed you want to buy ? : 3
+
+* * * * * * * * 
+Enter the number of seed types you want to buy: 2
+Enter the 1 name :
+Apple
+Enter the 2 name :
+Grape
+The seeds you want to buy are : 
+Apple
+Grape
+The total price of your products : RM600
+* * * * * * * * 
+
+
+* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *
+These are only for users' information.
+The total price of 200g seeds are : RM510
+The most expensive seed's price is : RM90
+* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *
+
+* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *
+The total price of 500g seeds are : RM940
+The most expensive seed's price is : RM160
+* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *
+Are you a member ?
+Enter 'Y' if you are a member. 
+Enter 'N' if you are not a member.
+Y
+You already a member. 
+
+If you are a member, you will get benefits like down below :
+You will get a RM5 off voucher for next purchase for minimum spending RM100. 
+If you are spending RM300 and above, you will get a RM10 off for next purchase, a free tool and free delivery.
+
+You can choose the method of paying.
+Enter [1] for online banking. 
+Enter [2] for cash on delivery.
+Please enter your choice : 1
+You are choosing online banking as a payment method.
+
+* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *
+You get RM10 off for next purchase, a free tool and and also free delivery.
+The final amount you have to pay is RM650
+* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *
+
+Do you want to continue to other food or drink?
+1.Yes 2.No
+Please enter a number : 2
+OK,thank you for using our service,please come again!!!
