@@ -1,0 +1,185 @@
+package project1;
+import java.util.Scanner;
+public class CAKE {
+
+	public CAKE() {
+		// TODO Auto-generated constructor stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("*    *    *   * * *  *        * *       *       * * * * *   * * *   ");
+		System.out.println("*    *    *   *      *      *        *     *    *   *   *   *       ");
+		System.out.println("*   * *   *   * *    *     *       *         *  *   *   *   * *     ");
+		System.out.println(" * *   * *    *      *      *        *     *    *   *   *   *       ");
+		System.out.println("  *     *     * * *  * * *    * *       *       *   *   *   * * *   ");
+		
+		System.out.println();
+		
+		System.out.println("                        *         *        *                        ");
+		System.out.println("                      *   *     *   *    *   *                      ");
+		System.out.println("                 *********************************                  ");
+		System.out.println("                 *                               *                  ");
+		System.out.println("                 *     *   *   *   *   *   *     *                  ");
+		System.out.println("                 * * *   *   *   *   *   *   * * *                  ");
+		System.out.println("                 *                               *                  ");
+		System.out.println("                 *********************************                  ");
+		System.out.println("                 * * * * * * * * * * * * * * * * *                  ");
+		System.out.println("                 *********************************                  ");
+		
+		System.out.println();
+		
+		showMessage();
+		System.out.println();
+		
+		int num, i = 0, total = 0, average;
+		int num_ingre, num_s;
+		int receive, stay;
+		double sum, cake_m;
+		String month;
+		
+		int [] sale = new int [7];
+		
+        showMessage2();
+        total = sumSales(sale);
+        
+		
+		System.out.println();
+		System.out.println("****************************************************");
+		System.out.println("*                                                  *");
+		System.out.println("*     The total of cake sale for one week is " + total + "    *");
+	    average = total /7;
+	    System.out.println("* The average of number cake sale for one day is " + average + " *");
+		System.out.println("*                                                  *");
+	    System.out.println("****************************************************");
+
+		System.out.println();
+		
+		System.out.print("Please enter the number of your ingredients : ");
+		num_ingre = sc.nextInt();
+		System.out.println();
+		System.out.println("****************************************************");
+		
+		String [] ingredient = new String[num_ingre];
+		double [] mass = new double [num_ingre];
+		double [] stock = new double [num_ingre];
+		double [] total_ing = new double [num_ingre];
+		double [] last = new double [num_ingre];
+		double [] new_mass = new double [num_ingre];
+		
+		
+		System.out.println();
+		
+		System.out.println("Please enter your ingredients :");
+		
+		for(int j = 0; j < num_ingre; j++) {
+			
+			System.out.print("* ");
+			ingredient[j] = sc.next();
+		}
+		
+		System.out.println();
+		
+		System.out.println("****************************************************");
+		System.out.println();
+		showMessage3();
+		
+		for(int k = 0; k < num_ingre; k++) {
+			System.out.print(ingredient[k] + " : ");
+			mass[k] = sc.nextDouble();
+		}
+		
+		System.out.println();
+		
+		System.out.println("****************************************************");
+		System.out.println();
+		showMessage4();
+		
+		for(int l = 0; l < num_ingre; l++) {
+			System.out.print(ingredient[l] + " : ");
+			stock[l] = sc.nextDouble();
+		}
+		
+		cake_m = average * 30;
+		
+		for(int m = 0; m < num_ingre; m++) {
+			
+			total_ing[m] = mass[m] * cake_m;
+		}
+		
+		for(int n = 0; n < num_ingre; n++) {
+			last[n] = total_ing[n] - stock[n];
+		}
+		
+		System.out.println();
+		
+		System.out.println("**************************");
+		
+		System.out.println("      The results       ");;
+		
+		for(int o = 0; o < num_ingre; o++) {
+			System.out.println(" " + ingredient[o] + " : " + last[o] + " kg ");
+		}
+		System.out.println("**************************");
+        System.out.println();
+		
+		showMessage5();
+		num_s = sc.nextInt();
+		
+		System.out.println();
+		
+        if(num_s > 0) {
+        	for(int p = 0; p < num_ingre; p++) {
+        		System.out.println(ingredient[p] + " : " + last[p] + " kg");
+        		System.out.print("Enter new mass or number of " + ingredient[p] + " in kg = ");
+        		new_mass[p] = sc.nextDouble();
+        		
+        		System.out.println();
+        	}
+        	
+        	System.out.println();
+        	System.out.println("**************************");
+        	System.out.println("The new mass of ingredients : ");
+        	for(int q = 0; q < num_ingre; q++ ) {
+        	   System.out.println(ingredient[q] + " = " + new_mass[q] + " kg");
+        	}
+        }
+        else {
+        	System.out.println("**************************");
+        	for(int r = 0; r < num_ingre; r++) {
+    			System.out.println(ingredient[r] + " : " + last[r]);
+    		}
+        }
+        
+        System.out.println();
+        System.out.println("**************************");
+        System.out.println();
+		System.out.println("Thank you for using our service");
+	}
+	public static int sumSales(int[] cake) {
+		int total = 0;
+		for(int z = 0; z < cake.length; z++ ) {
+		    Scanner sc = new Scanner(System.in);
+			System.out.print("Sales : ");
+			cake[z] = sc .nextInt();
+		    total = total + cake[z];}
+	
+		return total;
+	}
+	public static void showMessage() {
+		System.out.println("This Programme Will Calculate The Mass or Number of Ingredients for 1 Month");
+	}
+	public static void showMessage2() {
+		System.out.println("Please enter the number of sale of the cake day by day in one week :");
+		
+	}
+	public static void showMessage3() {
+		System.out.println("Please enter the mass of each ingredient to make one cake : ");
+	}
+	public static void showMessage4() {
+		System.out.println("Please enter the mass of remaining stock of each ingredients :");
+	}
+	public static void showMessage5() {
+		System.out.println("Do you want to add more the ingredient???");
+		System.out.println("If you want to add more the amount of the ingredient , please enter 1");
+		System.out.println("If you want to stay with the amount of the ingredient, please enter 0");
+	}
+
+}
