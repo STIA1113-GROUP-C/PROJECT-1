@@ -1,0 +1,140 @@
+package project1;
+import java.util.Scanner;
+public class DESSERTS {
+
+	public DESSERTS() {
+		// TODO Auto-generated constructor stub
+		Scanner sc = new Scanner(System.in);
+		int range;
+		System.out.print("Enter how many types of desserts you sell in your store: ");
+		range = sc.nextInt();
+		String [] dessert = new String [range];
+		double [] price = new double [range];
+		double [] cost = new double [range];
+		int [] quantity = new int [range];
+		double [] grossprft = new double [range];
+		double totalcostingredients = 0;
+		double totalgrossprft = 0;
+		double totalsales = 0;
+		display1(dessert, price, cost, quantity, grossprft, totalcostingredients, totalgrossprft, totalsales);
+	}
+	
+		public static void display1(String[]dessert, double[]price, double[]cost, int[]quantity, double[]gross, double totalcts, double totalgrs, double totalsls) {
+			Scanner sc = new Scanner(System.in);
+			double income = 0;
+			double totalothercosts = 0;
+			totalcts = 0;
+			totalgrs = 0;
+			totalsls = 0;
+			System.out.println("Enter the "+dessert.length+" type of desserts :");
+			
+			for(int x=0; x<dessert.length; x++) {
+				dessert[x] = sc.nextLine();
+			}
+			System.out.println();
+			
+			for(int x=0; x<dessert.length; x++) {	
+				System.out.print("Price of the "+dessert[x]+" : RM");
+				price[x] = sc.nextDouble();
+				System.out.print("Cost of ingredients of the "+dessert[x]+" : RM");
+				cost[x] = sc.nextDouble();
+				System.out.print("Quantity of the "+dessert[x]+" sold : ");
+				quantity[x] = sc.nextInt();
+				System.out.println();
+			}
+			
+			for(int x=0; x<dessert.length; x++) {
+				gross[x] = price[x] - cost[x];
+			}
+			
+			for(int x=0; x<dessert.length; x++) {
+				totalcts += quantity[x] * cost[x];
+				totalgrs += quantity[x] * gross[x];
+				totalsls += quantity[x] * price[x];
+			}
+			totalothercosts = display2(totalothercosts);
+			income = totalgrs-totalothercosts;
+			displayDesserts(dessert, price, quantity, cost, gross);
+			System.out.println();
+			displayFinancialStatement(totalsls, totalcts, totalgrs, totalothercosts, income);
+			System.out.println();
+			display3(totalothercosts, income, totalgrs);
+			System.out.println();
+		}
+		
+		public static double display2(double totalotr) {
+			Scanner sc = new Scanner(System.in);
+			char reply;
+			int numberemployee;
+			double employeesalary, totalsalary, rent, utilities, transport;
+			totalotr = 0;
+			System.out.println("Have you hired staff? (Yes or No)");
+			reply = sc.next().charAt(0);
+			
+			if(reply == 'Y' || reply == 'y') {
+				System.out.print("Enter the number of employees you hired : ");
+				numberemployee = sc.nextInt();
+				System.out.print("Enter the employee salary : RM");
+				employeesalary = sc.nextDouble();
+				totalsalary = 0;
+				
+				for(int x=0 ; x<numberemployee ; x++) {
+					totalsalary += employeesalary;
+				}
+				System.out.print("Enter the rent payment per month : RM");
+				rent = sc.nextDouble();
+				System.out.print("Enter the utilities fee for this month : RM");
+				utilities = sc.nextDouble();
+				System.out.print("Enter the transport fee for this month : RM");
+				transport = sc.nextDouble();
+				System.out.println();
+				totalotr = totalsalary + rent + utilities + transport;
+			}
+			else if(reply == 'N' || reply == 'n') {
+				System.out.print("Enter the rent payment per month : RM");
+				rent = sc.nextDouble();
+				System.out.print("Enter the utilities fee for this month : RM");
+				utilities = sc.nextDouble();
+				System.out.print("Enter the transport fee for this month : RM");
+				transport = sc.nextDouble();
+				System.out.println();
+				totalotr = rent + utilities + transport;
+			}
+			return totalotr;
+		}
+		
+		public static void displayDesserts(String[]dessert, double[]price, int[]quantity, double[]cost, double[]gross) {
+			System.out.println("Desserts detail:");
+			for(int x=0; x<dessert.length; x++) {
+				System.out.println(+(x+1)+". "+dessert[x]+" \tPrice: RM"+price[x]+" \tQuantity Sold: "+quantity[x]+" \tCost: RM"+cost[x]+" \tGross Profit: RM"+gross[x]);
+			}
+		}
+		
+		public static void displayFinancialStatement(double totalsls, double totalcts, double totalgrs, double totalothercosts, double income) {
+			System.out.println("\t FINANCIAL STATEMENT");
+			System.out.println("\t**************************************************************************");
+			System.out.println("\t TOTAL SALES    \t   = RM"+totalsls);
+			System.out.println("\t TOTAL COST OF INGREDIENTS = RM"+totalcts);
+			System.out.println("\t______________________________________________");
+			System.out.println("\t TOTAL GROSS PROFIT \t   = RM"+totalgrs);
+			System.out.println("\t TOTAL OTHER COST \t= RM"+totalothercosts);
+			System.out.println("\t______________________________________________");
+			System.out.println("\t NET INCOME \t\t= RM"+income);
+			System.out.println("\t**************************************************************************");
+		}
+		
+		public static void display3(double totalothercosts, double income, double totalgrs) {
+			if(totalgrs > totalothercosts) {
+				if(income >= 5000) {
+					System.out.println("\"You have a decent income and can keep your business going.\"");
+				}
+				else if(income < 5000) {
+					System.out.println("\"Despite the low income, you can still keep your business going.\"");
+				}
+			}
+			else {
+					System.out.println("\"Your company is losing money, and if you continue to operate, you will face bankruptcy.\"");
+			}
+		}
+		
+}
