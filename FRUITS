@@ -1,0 +1,289 @@
+package project1;
+import java.util.Scanner;
+
+public class FRUITS {
+
+	
+
+	public FRUITS() {
+		// TODO Auto-generated constructor stub
+		 Scanner scan = new Scanner (System.in);
+			
+			String name;
+			String address;
+			String gender;
+			int age;
+			String fruit, fruit2;
+			int weight, weight2;
+			int amount, amount2;
+			int price1 , price2;
+			int finalprice, finalprice2; 
+			int total;
+			String member;
+			char choice;
+			int finaltotal;
+			int discountreceived;
+			int delivery;
+		    int method;
+			
+			
+			System.out.print("Please enter your name : ");
+			name = scan.next();
+			
+			System.out.print("Please enter your state : ");
+			address = scan.next();
+			
+			System.out.print("Please enter your gender : ");
+			gender = scan.next();
+			
+			System.out.print("Please enter your age : ");
+			age = scan.nextInt();
+			
+			System.out.println();
+			
+			System.out.print("Welcome to the Green Eagle Seed Application," + name );
+			
+			System.out.println();
+			System.out.println();
+			
+			System.out.println("You have a notification from the application !");
+			showNotification(name);
+			
+			System.out.println("* * * * * * * * * * * *");
+			
+			System.out.println("MENU");
+			
+			System.out.println("Type of seed      *" + " Price (200g) " + "*" + " Price (500g) ");
+			System.out.println("**************************************************************" );
+			System.out.println("Apple             *" + "    RM60      " + "*" + "   RM110      ");
+			System.out.println("Premium Apple     *" + "    RM70      " + "*" + "   RM120      ");
+			System.out.println("Strawberry        *" + "    RM80      " + "*" + "   RM150      ");
+			System.out.println("Premium Strawberry*" + "    RM90      " + "*" + "   RM160      ");
+			System.out.println("Grape             *" + "    RM50      " + "*" + "   RM100      ");
+			System.out.println("Premium Grape     *" + "    RM60      " + "*" + "   RM110      ");
+			System.out.println("Orange            *" + "    RM45      " + "*" + "    RM90      ");
+			System.out.println("Premium Orange    *" + "    RM55      " + "*" + "   RM100      ");
+			System.out.println("**************************************************************" );
+			
+			System.out.println();
+			
+			System.out.print("Please enter the type of seed you want to buy : ");
+			fruit = scan.next();
+				
+			System.out.print("Choose either 200g or 500g : " );
+			weight = scan.nextInt();
+			
+			System.out.print("Enter the price of seed you want to buy : RM");
+			price1 = scan.nextInt();
+			
+			System.out.print("How many bag of seed you want to buy ? : ");
+			amount = scan.nextInt();
+			
+			finalprice = price1 * amount;
+			
+			System.out.println("* * * * * * * * ");
+			
+			System.out.print("Please enter the second type of seed you want : ");
+			fruit2 = scan.next();
+		
+			System.out.print("Choose either 200g or 500g : ");
+			weight2 = scan.nextInt();
+			
+			System.out.print("Enter the price of seed you want to buy : RM");
+			price2 = scan.nextInt();
+		
+			System.out.print("How many bag of seed you want to buy ? : ");
+			amount2 = scan.nextInt();
+			
+			finalprice2 = price2 * amount2;
+			
+			total = finalprice + finalprice2;
+			
+			System.out.println();
+			System.out.println("* * * * * * * * ");
+			
+			
+			System.out.print("Enter the number of seed types you want to buy: ");
+			int seed = scan.nextInt();
+			String [] seedType = new String [seed];
+			
+			for ( int a = 0; a < seed; a++) {
+				System.out.println ("Enter the " + (a + 1 ) + " name :");
+				seedType[a] = scan.next();
+			}
+			
+			System.out.println("The seeds you want to buy are : ");
+			
+			for ( String b : seedType) {
+				System.out.println(b);
+			}
+		
+			
+			System.out.println("The total price of your products : RM" + total);
+			
+			System.out.println("* * * * * * * * ");
+			System.out.println();
+			System.out.println();
+			System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *");
+			
+			System.out.println("These are only for users' information.");
+			
+			int [] list1 = {60,70,80,90,50,60,45,55};
+			int sum, expensive;
+			
+			sum = sumArray(list1);
+			System.out.println("The total price of 200g seeds are : RM" + sum);
+			
+			expensive = indexExpensive(list1);
+			System.out.println("The most expensive seed's price is : RM" + list1[expensive]);
+			System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *");
+			
+			System.out.println();
+			System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *");
+			
+			int [] list2 = {110,120,150,160,100,110,90,100};
+			int sum2;
+			int expensive2;
+			
+			sum2 = sumArray2 (list2);
+			System.out.println("The total price of 500g seeds are : RM" + sum2);
+			
+			expensive2 = indexExpensive2(list2);
+			System.out.println("The most expensive seed's price is : RM" + list2 [expensive]);
+			System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *");
+			
+			System.out.println("Are you a member ?");
+			System.out.println("Enter 'Y' if you are a member. \nEnter 'N' if you are not a member.");
+			member = scan.next();
+			choice = member.charAt(0);
+			
+			if (choice == 'N') {
+				System.out.println("Do you want to be a member ?");
+				System.out.println("Enter 'A' if you want to be a member. \nEnter 'B' if you do not want to be a member.");
+				member = scan.next();
+			    choice = member.charAt(0); 
+			}
+			
+			if (choice == 'A') 
+			   System.out.println("Your member's name is " + name);
+			
+			else if (choice == 'B')
+				System.out.println("You will not get any benefits.");
+				
+			else 
+				System.out.println("You already a member. ");
+				
+		    
+			System.out.println();
+			System.out.println("If you are a member, you will get benefits like down below :");
+			System.out.print("You will get a RM5 off voucher for next purchase for minimum spending RM100. \nIf you are spending RM300 and above, you will get a RM10 off for next purchase, a free tool and free delivery.");
+			
+			System.out.println();
+			System.out.println();
+			
+			System.out.println("You can choose the method of paying.");
+			System.out.println("Enter [1] for online banking. \nEnter [2] for cash on delivery.");
+			System.out.print("Please enter your choice : ");
+			method = scan.nextInt();
+			
+			while (method != 1 && method != 2 ) {
+				System.out.println("INVALID METHOD");
+				System.out.print("Please enter your choice again : ");
+				method = scan.nextInt();
+			}
+			
+			if (method == 1){
+				System.out.print("You are choosing online banking as a payment method.");
+			}
+			
+			else {
+				System.out.println("You are choosing cash on delivery as a payment method.");
+				
+			}
+			
+			
+			System.out.println();
+			System.out.println();
+			
+			if (choice == 'A') {
+				System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *");
+				 System.out.println("You will get 25% off as a new member.");
+		         System.out.println("You have to pay RM50 per year to keep being a member.");
+				discountreceived = (total*25)/100;
+				System.out.println("You get RM" + discountreceived + " off.");
+				System.out.println("You have to pay RM5 for delivery cost.");
+				finaltotal = total - discountreceived + 50 ;
+				delivery = finaltotal +5;
+				System.out.println("The final amount you have to pay is RM" + delivery);
+				System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *");
+			}
+			
+			else if (total <= 100) {
+				System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *");
+				System.out.println("You get RM5 off voucher for next purchase.");
+				finaltotal = total + 50;
+				System.out.println("You have to pay RM5 for delivery cost.");
+				delivery = finaltotal + 5;
+				System.out.println("The final amount you have to pay is RM" + delivery);
+				System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *");
+			}
+
+			else if (total >= 300) {
+				System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *");
+				System.out.println("You get RM10 off for next purchase, a free tool and and also free delivery.");
+				finaltotal = total + 50;
+				System.out.println("The final amount you have to pay is RM" + finaltotal);
+				System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * * * * * * *");
+			}
+		
+			
+			else {
+				System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * ** * * * *");
+				System.out.println("You have to pay RM5 for delivery cost.");
+				delivery = total + 5;
+				System.out.println("The final amount you have to pay is RM" + delivery);
+				System.out.println("* * * * * * * * * * * * * * * * * *  *  * *  * * ** * * * *");
+			}
+		}
+		
+		public static int sumArray(int [] list) {
+			int x;
+			int sum = 0;
+			for ( x = 0; x <list.length; x++)
+				sum = sum + list[x];
+			return sum;
+			
+		}
+		
+		public static int indexExpensive (int [] list) {
+			int y;
+			int i = 0;
+			for (y = 1; y < list.length; y++)
+				if (list[i] < list[y])
+					i = y;
+			return i;
+		}
+		
+		public static int sumArray2 (int [] list) {
+			int m;
+			int sum2 = 0;
+			for ( m = 0; m < list.length; m++)
+				sum2 = sum2 + list[m];
+			return sum2;
+		}
+		
+		public static int indexExpensive2(int [] list) {
+			int j;
+			int k = 0;
+			for (j = 1; j < list.length; j++)
+				if (list[k] < list[j])
+					k = j;
+			return k;
+					
+		}
+		
+		public static void showNotification(String g) {
+			System.out.println("Hello " + g );
+			System.out.println("Feel free to check the seeds we offer !");
+		}
+			}
