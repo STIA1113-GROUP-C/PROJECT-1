@@ -1,0 +1,158 @@
+package project1;
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class BREAD {
+	private static Scanner sc;
+	public BREAD() {
+		// TODO Auto-generated constructor stub
+		inputPassword();
+	}
+		
+	public static void inputPassword() {
+		sc = new Scanner(System.in);	
+		
+		for(int i=2;i>=0;i--) {
+            System.out.print("Enter your password: ");
+            int type = sc.nextInt();
+            int pass = 12345;
+            if(type==pass) {
+            System.out.println("Your password is correct.");
+            break;
+            }else
+            System.out.print("Your password is wrong! You have "+i+" chance to try again. ");
+            System.out.println();
+            if(i==0) {
+            System.out.print("Sorry, you need to wait for 5 minutes to key in your password again!");
+            return;
+            }
+        }
+		String option[] = {"Options to access:","1)Price Calculation for Bread","2)Bill Payment"};
+		display(option);}
+		
+	public static void display(String[] option) {	
+		for(int k = 0; k < option.length; k++ ) {
+			System.out.println(option[k]);
+		}
+		System.out.print("Enter the option that want to access: ");
+		int options = sc.nextInt();
+		
+		if(options == 1) {
+			priceCalculation();
+		}
+		if(options == 2) {
+			billPayment();
+		}
+	}
+
+	public static int[] priceCalculation() {	
+		double flour, sugar, yeast, egg;
+		double garlic, chocolate, milk, butter;
+		double buttermilk, redbean;
+		System.out.print("\nEnter price of 1kg flour for one packet: RM");
+		flour = sc.nextDouble();
+		System.out.print("Enter price of 1kg sugar for one packet: RM");
+		sugar = sc.nextDouble();
+		System.out.print("Enter price of egg for one dozen: RM");
+		egg = sc.nextDouble();
+		System.out.print("Enter price of 11g yeast for one packet: RM");
+		yeast = sc.nextDouble();
+		System.out.print("Enter price of 1Litre milk for one carton: RM");
+		milk = sc.nextDouble();
+		System.out.print("Enter price of 250g butter for one packet: RM");
+		butter = sc.nextDouble();
+		System.out.print("Enter price of chocolate for one bar: RM");
+		chocolate = sc.nextDouble();
+		System.out.print("Enter price of 500g garlic for one bag: RM");
+		garlic = sc.nextDouble();
+		System.out.print("Enter price of 325g buttermilk for one carton: RM");
+		buttermilk = sc.nextDouble();
+		System.out.print("Enter price of 300g red bean for one bag: RM");
+		redbean = sc.nextDouble();
+		
+		double costCB = 0.125*chocolate + 0.115*flour + 0.0125*sugar + 0.5*egg + 0.19*yeast + 0.045*milk + 0.115*butter;
+		double costGB = 0.1*garlic + 0.10575*flour + 0.0095*sugar + 0.25*egg + 0.17*yeast + 0.0125*milk + 0.112*butter;
+		double costBSB = 0.035*buttermilk + 0.1125*flour + 0.01875*sugar + 0.25*egg + 0.185*yeast + 0.14*butter;
+		double costRBB = 0.1675*redbean + 0.11*flour + 0.015*sugar + 0.25*egg + 0.19*yeast + 0.025*milk + 0.08*butter;
+		
+		System.out.printf("\nCost of chocolate breads is: RM%.2f" , costCB);
+		System.out.println();
+		System.out.printf("Cost of garlic bread is: RM%.2f" , costGB);
+		System.out.println();
+		System.out.printf("Cost of butter sugar bread is: RM%.2f" , costBSB);
+		System.out.println();
+		System.out.printf("Cost of red bean bread is: RM%.2f" , costRBB);
+		System.out.println();
+		
+		double priceCB = (costCB*1.2);
+		double priceGB = (costGB*1.35);
+		double priceBSB = (costBSB*1.35);
+		double priceRBB = (costRBB*1.3);
+		
+		System.out.printf("\nPrice of chocolate bread is: RM%.2f" , priceCB);
+		System.out.println();
+		System.out.printf("Price of garlic bread is: RM%.2f" , priceGB);
+		System.out.println();
+		System.out.printf("Price of butter sugar bread is: RM%.2f" , priceBSB);
+		System.out.println();
+		System.out.printf("Price of red bean bread is: RM%.2f" , priceRBB);		
+		return null;
+		}
+		
+	public static int[] billPayment() {
+		int card, member;
+		double ChocolateBread = 6.12;
+		double GarlicBread = 4.11;
+		double ButterSugarBread = 4.12;
+		double RedBeanBread = 4.52;
+		int a,b,c,d;
+		double total; double totalprice = 0;
+		double price[] = {6.12,4.11,4.12,4.52};
+		String bread[] = {"chocolate bread","garlic bread","butter sugar bread","red bean bread"};
+		
+		System.out.println("\nChocolate bread: RM" + price[0]);
+		System.out.println("Garlic bread: RM" + price[1]);
+		System.out.println("Butter sugar bread: RM" + price[2]);
+		System.out.println("Red bean bread: RM" + price[3]);
+			
+		System.out.println("\nDo you have membership card?");
+		System.out.println("0 = NO");
+		System.out.println("1 = YES");
+		System.out.print("Enter number: ");
+		card = sc.nextInt(); 
+			
+		if(card == 1) {
+			System.out.print("Enter the membership card number: ");
+			member = sc.nextInt(); 
+		}
+		System.out.print("\nQuantity of " + bread[0] + ": " );
+		a = sc.nextInt(); 
+		System.out.print("Quantity of " + bread[1] + ": ");
+		b = sc.nextInt(); 
+		System.out.print("Quantity of " + bread[2] + ": ");
+		c = sc.nextInt(); 
+		System.out.print("Quantity of " + bread[3] + ": ");
+		d = sc.nextInt(); 
+		total = a*ChocolateBread + b*GarlicBread + c*ButterSugarBread + d*RedBeanBread;
+			
+		if(card == 0) { 
+			totalprice = a*ChocolateBread + b*GarlicBread + c*ButterSugarBread + d*RedBeanBread;
+			System.out.printf("\nPrice to be paid: RM%.2f%n" , totalprice);
+		}
+			
+		if(card == 1) {
+			double discountreceived = (total*0.1);
+			totalprice = total - discountreceived;
+			System.out.println();
+			System.out.printf("Total price      : RM%.2f%n" , total);
+			System.out.printf("Discount received: RM%.2f%n" , discountreceived);
+			System.out.printf("Price to be paid : RM%.2f%n" , totalprice);
+		}
+		System.out.print("\nAmount received: RM");
+		double amount = sc.nextDouble();
+		double change = amount - totalprice;
+		System.out.printf("Change 	       : RM%.2f" , change);
+		return null;
+		}			
+	
+	}
