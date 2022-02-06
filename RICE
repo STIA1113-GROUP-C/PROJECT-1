@@ -1,0 +1,566 @@
+package project1;
+
+import java.util.Scanner;
+
+public class RICE {
+
+	public RICE() {
+		// TODO Auto-generated constructor stub
+		int x,y;
+		double a,b,c,d,e,f;
+		int p,q,r,s;
+		int percentage;
+		int i = 1;
+		
+		double a1,b1,c1,d1,e1,f1;
+		
+		double sum1,sum2,sum3,sum4,sum5,sum6,sum7,sum8,sum9,sum10,sum11,sum12;
+		
+		
+		double[][]rice = new double[6][3];
+		double[][]rice1 = new double[6][3];
+		double[][]sum = new double[6][3];
+
+		int service;
+		Scanner sc = new Scanner (System.in);
+		do {
+		System.out.println("Hi,what service do you need?");
+		System.out.println("1:Calculate the yield.");
+		System.out.println("2:Calculate the next harvest amount.");
+		System.out.println("3:Arranging the inventory.");
+		System.out.println("0:Exit.");
+		System.out.print("Please enter the number : ");
+		x = sc.nextInt();
+		System.out.println();
+		
+		if(x == 1) {
+	    System.out.println("Please enter the weight in sample unit(kg/10m2)");
+		System.out.println("Enter the weight of Black rice:");
+	    a = sc.nextDouble(); 
+		
+		System.out.println("Enter the weight of Jasmine rice:");
+		b = sc.nextDouble();
+		
+		System.out.println("Enter the weight of Brown rice:");
+		c = sc.nextDouble();
+		
+		System.out.println("Enter the weight of Red Cargo rice:");
+		d = sc.nextDouble();
+		
+		System.out.println("Enter the weight of Sticky rice:");
+		e = sc.nextDouble();
+		
+		System.out.println("Enter the weight of Long grain white rice:");
+		f = sc.nextDouble();
+		
+		
+		System.out.println("Please enter the area of the farm of each type of rice (hectare)");
+		System.out.println("Enter the area of Black rice farm:");
+	    a1 = sc.nextDouble(); 
+		
+		System.out.println("Enter the area of Jasmine rice farm:");
+		b1 = sc.nextDouble();
+		
+		System.out.println("Enter the area of Brown rice farm:");
+		c1 = sc.nextDouble();
+		
+		System.out.println("Enter the area of Red Cargo rice farm:");
+		d1 = sc.nextDouble();
+		
+		System.out.println("Enter the area of Sticky rice farm:");
+		e1 = sc.nextDouble();
+		
+		System.out.println("Enter the area of Long grain white rice farm:");
+		f1 = sc.nextDouble();
+		
+		
+		System.out.println();
+		
+		
+		
+		sum1 = (a*1000) * a1;
+		sum2 = (b*1000) * b1;
+		sum3 = (c*1000) * c1;
+		sum4 = (d*1000) * d1;
+		sum5 = (e*1000) * e1;
+		sum6 = (f*1000) * f1;
+		
+		System.out.println("************************************************");
+		System.out.println("*The formula of kg/ha is kg/10m2 x 1000 = kg/ha*");
+		System.out.println("*The formula of kg is kg/ha x hectare = kg     *");
+		System.out.println("*The yield of each type of rice in kg          *");
+		System.out.println("************************************************"); 
+		
+		System.out.println();
+		
+		System.out.printf("%-7s%3.2f%2s%n","Black rice :" , sum1 , "kg");
+		System.out.printf("%-7s%3.2f%2s%n","Jasmine rice :" , sum2 , "kg");
+		System.out.printf("%-7s%3.2f%2s%n","Brown rice :" , sum3 , "kg");
+		System.out.printf("%-7s%3.2f%2s%n","Red Cargo rice :" , sum4 , "kg");
+		System.out.printf("%-7s%3.2f%2s%n","Sticky rice :" , sum5 , "kg");
+		System.out.printf("%-7s%3.2f%2s%n","Long grain white rice :" , sum6 , "kg");
+		
+		System.out.println();
+		
+		sum7 = sum1 * 2.2;
+		sum8 = sum2 * 2.2;
+		sum9 = sum3 * 2.2;
+		sum10 = sum4 * 2.2;
+		sum11 = sum5 * 2.2;
+		sum12 = sum6 * 2.2;
+		System.out.println("**********************************************");
+		System.out.println("*The formula of 1 kg/ha is 2.2lbs/ha         *");
+		System.out.println("*The formula of lbs is lbs/ha x hectare = lbs*");
+		System.out.println("*The yield of each type of rice in lbs       *");
+		System.out.println("**********************************************");
+		
+		System.out.println();
+		
+		System.out.printf("%-7s%3.2f%2s%n","Black rice :" , sum7 , "lbs");
+		System.out.printf("%-7s%3.2f%2s%n","Jasmine rice :" , sum8 , "lbs");
+		System.out.printf("%-7s%3.2f%2s%n","Brown rice :" , sum9 , "lbs");
+		System.out.printf("%-7s%3.2f%2s%n","Red Cargo rice :" , sum10 , "lbs");
+		System.out.printf("%-7s%3.2f%2s%n","Sticky rice :" , sum11 , "lbs");
+		System.out.printf("%-7s%3.2f%2s%n","Long grain white rice :" , sum12 , "lbs");}
+		
+		
+		
+		else if(x == 2) {
+		System.out.println("Please enter the current yield of Black rice(kg/ha)");
+		a = sc.nextDouble();
+	
+	
+		System.out.println("Please enter the current yield of Jasmine rice(kg/ha)");
+		b = sc.nextDouble();
+	
+	
+		System.out.println("Please enter the current yield of Brown rice(kg/ha)");
+		c = sc.nextDouble();
+	
+	
+		System.out.println("Please enter the current yield of Red Cargo rice(kg/ha)");
+		d = sc.nextDouble();
+	
+	
+		System.out.println("Please enter the current yield of Sticky rice(kg/ha)");
+		e = sc.nextDouble();
+	
+	
+		System.out.println("Please enter the current yield of Long grain white rice(kg/ha)");
+		f = sc.nextDouble();
+	
+			System.out.println("Please select the percentage by following type of factors");
+			System.out.println("Climate");
+			System.out.println("Spring: +10%");
+			System.out.println("Summer: +10%");
+			System.out.println("Autumn: -10%");
+			System.out.println("Winter: +5%");
+			System.out.println("Enter the percentage(%)");
+			p = sc.nextInt();;
+			
+			System.out.println("Government policy");
+			System.out.println("Tax: -5%");
+			System.out.println("Allowance: +10%");
+			System.out.println("Enter the percentage(%)");
+			q = sc.nextInt();
+		
+			System.out.println("Human Resources");
+			System.out.println("Enough: +10%");
+			System.out.println("Lack: -10%");
+			System.out.println("Enter the percentage(%)");
+			r = sc.nextInt();
+			
+			System.out.println("Cost of production");
+			System.out.println("Increase: -5%");
+			System.out.println("Decrease: +5%");
+			System.out.println("Enter the percentage(%)");			
+			s = sc.nextInt();
+		
+		percentage = p+q+r+s;
+		
+		switch(percentage) {
+		case 5 : System.out.println("The next harvest amount of each of the rice");
+                 System.out.printf("%-7s%3.2f%2s%n","The amount of the black rice:",(a * 1.05),"kg/ha") ;
+                 System.out.printf("%-7s%3.2f%2s%n","The amount of the Jasmine rice:",(b * 1.05) ,"kg/ha") ; 
+                 System.out.printf("%-7s%3.2f%2s%n","The amount of the Brown rice:",(c * 1.05),"kg/ha") ; 
+                 System.out.printf("%-7s%3.2f%2s%n","The amount of the Red Cargo rice:",(d * 1.05),"kg/ha") ; 
+                 System.out.printf("%-7s%3.2f%2s%n","The amount of the Sticky rice:",(e * 1.05),"kg/ha") ; 
+                 System.out.printf("%-7s%3.2f%2s%n","The amount of the Long grain white rice:",(f * 1.05),"kg/ha") ; 
+        break;
+		         
+		case 10 : System.out.println("The next harvest amount of each of the rice");
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the black rice:",(a * 1.10),"kg/ha") ;
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Jasmine rice:",(b * 1.10) ,"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Brown rice:",(c * 1.10),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Red Cargo rice:",(d * 1.10),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Sticky rice:",(e * 1.10),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Long grain white rice:",(f * 1.10),"kg/ha") ; 
+        break;      
+                  
+        case 15 : System.out.println("The next harvest amount of each of the rice");
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the black rice:",(a * 1.15),"kg/ha") ;
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Jasmine rice:",(b * 1.15) ,"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Brown rice:",(c * 1.15),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Red Cargo rice:",(d * 1.15),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Sticky rice:",(e * 1.15),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Long grain white rice:",(f * 1.15),"kg/ha") ; 
+        break; 
+                  
+        case 20 : System.out.println("The next harvest amount of each of the rice");
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the black rice:",(a * 1.20),"kg/ha") ;
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Jasmine rice:",(b * 1.20) ,"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Brown rice:",(c * 1.20),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Red Cargo rice:",(d * 1.20),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Sticky rice:",(e * 1.20),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Long grain white rice:",(f * 1.20),"kg/ha") ; 
+        break;
+        
+        
+        case 25 : System.out.println("The next harvest amount of each of the rice");
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the black rice:",(a * 1.25),"kg/ha") ;
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Jasmine rice:",(b * 1.25) ,"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Brown rice:",(c * 1.25),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Red Cargo rice:",(d * 1.25),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Sticky rice:",(e * 1.25),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Long grain white rice:",(f * 1.25),"kg/ha") ; 
+        break;
+        
+        case 30 : System.out.println("The next harvest amount of each of the rice");
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the black rice:",(a * 1.30),"kg/ha") ;
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Jasmine rice:",(b * 1.30) ,"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Brown rice:",(c * 1.30),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Red Cargo rice:",(d * 1.30),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Sticky rice:",(e * 1.30),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Long grain white rice:",(f * 1.30),"kg/ha") ; 
+        break;
+        
+        case 35 : System.out.println("The next harvest amount of each of the rice");
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the black rice:",(a * 1.35),"kg/ha") ;
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Jasmine rice:",(b * 1.35) ,"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Brown rice:",(c * 1.35),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Red Cargo rice:",(d * 1.35),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Sticky rice:",(e * 1.35),"kg/ha") ; 
+                  System.out.printf("%-7s%3.2f%2s%n","The amount of the Long grain white rice:",(f * 1.35),"kg/ha") ; 
+        break;
+                
+        default : System.out.println("You are something wrong.");}}
+		
+		
+		else if(x == 3) {
+			do 
+	        {
+			
+				System.out.println("Select an SERVICE : ");
+	            System.out.println("1. ENTER THE INITIAL INVENTORY.");
+	            System.out.println("2. ENTER THE CURRENT INVENTORY.");
+	            System.out.println("3. CALCULATE THE FINAL INVENTORY.");
+	            System.out.println("4. CHECKING THE INVENTORY OF THE RICE");
+	            System.out.println("0.BACK");
+	            System.out.print("Enter a number : ");
+	            service = sc.nextInt();
+	            System.out.println();
+	           
+	            switch (service) 
+	            {   
+	                case 0:
+	                	System.out.println();
+	                	break;
+	                	
+	                case 1:
+	                	System.out.println("Please enter the initial inventory(kg/ha) in this order.");
+	                	System.out.println("1.Black rice(GRADE A)");
+	                	System.out.println("2.Black rice(GRADE B)");
+	                	System.out.println("3.Black rice(GRADE C)");
+	                	System.out.println("4.Jasmine rice(GRADE A)");
+	                	System.out.println("5.Jasmine rice(GRADE B)");
+	                	System.out.println("6.Jasmine rice(GRADE C)");
+	                	System.out.println("7.Brown rice(GRADE A)");
+	                	System.out.println("8.Brown rice(GRADE B)");
+	                	System.out.println("9.Brown rice(GRADE C)");
+	                	System.out.println("10.Red Cargo rice(GRADE A)");
+	                	System.out.println("11.Red Cargo rice(GRADE B)");
+	                	System.out.println("12.Red Cargo rice(GRADE C)");
+	                	System.out.println("13.Sticky rice(GRADE A)");
+	                	System.out.println("14.Sticky rice(GRADE B)");
+	                	System.out.println("15.Sticky rice(GRADE C)");
+	                	System.out.println("16.Long grain white rice(GRADE A)");
+	                	System.out.println("17.Long grain white rice(GRADE B)");
+	                	System.out.println("18.Long grain white rice(GRADE C)");
+	                	
+	            		inputArray(rice);
+	            		System.out.println();
+	                    break;
+	                    
+	                case 2:
+	                	System.out.println("Please enter the current inventory(kg/ha) in this order.");
+	                	System.out.println("1.Black rice(GRADE A)");
+	                	System.out.println("2.Black rice(GRADE B)");
+	                	System.out.println("3.Black rice(GRADE C)");
+	                	System.out.println("4.Jasmine rice(GRADE A)");
+	                	System.out.println("5.Jasmine rice(GRADE B)");
+	                	System.out.println("6.Jasmine rice(GRADE C)");
+	                	System.out.println("7.Brown rice(GRADE A)");
+	                	System.out.println("8.Brown rice(GRADE B)");
+	                	System.out.println("9.Brown rice(GRADE C)");
+	                	System.out.println("10.Red Cargo rice(GRADE A)");
+	                	System.out.println("11.Red Cargo rice(GRADE B)");
+	                	System.out.println("12.Red Cargo rice(GRADE C)");
+	                	System.out.println("13.Sticky rice(GRADE A)");
+	                	System.out.println("14.Sticky rice(GRADE B)");
+	                	System.out.println("15.Sticky rice(GRADE C)");
+	                	System.out.println("16.Long grain white rice(GRADE A)");
+	                	System.out.println("17.Long grain white rice(GRADE B)");
+	                	System.out.println("18.Long grain white rice(GRADE C)");
+	                	
+	            		inputArray1(rice1);
+	            		System.out.println();
+	                    break;
+	                    
+	                case 3:
+	                	 System.out.println("The final inventory(kg/ha). ");
+	                	 {for(int i1=0;i1<6;i1++){    
+	        			 for(int j=0;j<3;j++){    
+	        				 sum[i1][j]=rice[i1][j]+rice1[i1][j];
+	        				 }}}
+	        			 
+	        		    printArray(sum);	   
+	                    System.out.println();
+	                    break;
+	                    
+	                case 4:
+	                	System.out.println("Please enter the number of the rice you want to check.");
+	                	System.out.println("1.Black rice(GRADE A)");
+	                	System.out.println("2.Black rice(GRADE B)");
+	                	System.out.println("3.Black rice(GRADE C)");
+	                	System.out.println("4.Jasmine rice(GRADE A)");
+	                	System.out.println("5.Jasmine rice(GRADE B)");
+	                	System.out.println("6.Jasmine rice(GRADE C)");
+	                	System.out.println("7.Brown rice(GRADE A)");
+	                	System.out.println("8.Brown rice(GRADE B)");
+	                	System.out.println("9.Brown rice(GRADE C)");
+	                	System.out.println("10.Red Cargo rice(GRADE A)");
+	                	System.out.println("11.Red Cargo rice(GRADE B)");
+	                	System.out.println("12.Red Cargo rice(GRADE C)");
+	                	System.out.println("13.Sticky rice(GRADE A)");
+	                	System.out.println("14.Sticky rice(GRADE B)");
+	                	System.out.println("15.Sticky rice(GRADE C)");
+	                	System.out.println("16.Long grain white rice(GRADE A)");
+	                	System.out.println("17.Long grain white rice(GRADE B)");
+	                	System.out.println("18.Long grain white rice(GRADE C)");
+	                	System.out.print("Enter integer between 1-18 : ");
+	                	
+	            		int z = sc.nextInt();
+	            		System.out.println();
+	                	switch (z) {
+	                	
+	                case 1 :
+	                	System.out.print("Black rice(GRADE A) : ");
+	                   	search(sum, 0,0);
+	                   	System.out.println();
+	                    break;
+	                    
+	                case 2 :
+	                	System.out.print("Black rice(GRADE B) : ");
+	                	search(sum, 0,1);
+	                   	System.out.println();
+	                    break;
+	                    
+	                case 3 :
+	                	System.out.print("Black rice(GRADE C) : ");
+	                	search(sum, 0,2);
+	                   	System.out.println();
+	                    break;
+	                    
+	                case 4 :
+	                	System.out.print("Jasmine rice(GRADE A) : ");
+	                	search(sum, 1,0);
+	                   	System.out.println();
+	                    break;
+	                    
+	                case 5 :
+	                	System.out.print("Jasmine rice(GRADE B) : ");
+	                	search(sum, 1,1);
+	                   	System.out.println();
+	                    break; 
+	                    
+	                case 6 :
+	                	System.out.print("Jasmine rice(GRADE C) : ");
+	                	search(sum, 1,2);
+	                   	System.out.println();
+	                    break;	
+	                
+	                case 7 :
+	                	System.out.print("Brown rice(GRADE A) : ");   
+	                	search(sum, 2,0);
+	                   	System.out.println();
+	                    break;
+	                    
+	                case 8 : 
+	                	System.out.print("Brown rice(GRADE B) : ");
+	                	search(sum, 2,1);
+	                   	System.out.println();
+	                    break;	
+	                	
+	                case 9 :  
+	                	System.out.print("Brown rice(GRADE C) : ");
+	                	search(sum, 2,2);
+	                   	System.out.println();
+	                    break;	
+	                	
+	                case 10 : 
+	                	System.out.print("Red Cargo rice(GRADE A) : ");
+	                	search(sum, 3,0);
+	                   	System.out.println();
+	                    break;	
+	                	
+	                case 11 : 
+	                	System.out.print("Red Cargo rice(GRADE B) : ");
+	                	search(sum, 3,1);
+	                   	System.out.println();
+	                    break;	
+	                	
+	                case 12 :  
+	                	System.out.print("Red Cargo rice(GRADE C) : ");
+	                	search(sum, 3,2);
+	                   	System.out.println();
+	                    break; 	
+	                	
+	                case 13 :  
+	                	System.out.print("Sticky rice(GRADE A) : ");
+	                	search(sum, 4,0);
+	                   	System.out.println();
+	                    break;	
+	                	
+	                case 14 :   
+	                	System.out.print("Sticky rice(GRADE B) : ");
+	                	search(sum, 4,1);
+	                   	System.out.println();
+	                    break;	
+	                	
+	                case 15 :    
+	                	System.out.print("Sticky rice(GRADE C) : ");
+	                	search(sum, 4,2);
+	                   	System.out.println();
+	                    break;	
+	                	
+	                case 16 :    
+	                	System.out.print("Long grain white rice(GRADE A) : ");
+	                	search(sum, 5,0);
+	                   	System.out.println();
+	                    break;	
+	                	
+	                case 17 : 
+	                	System.out.print("Long grain white rice(GRADE B) : ");
+	                	search(sum, 5,1);
+	                   	System.out.println();
+	                    break;	
+	                	
+	                case 18 :   
+	                	System.out.print("Long grain white rice(GRADE C) : ");
+	                	search(sum, 5,2);
+	                   	System.out.println();
+	                    break;	
+	                	
+	                	}
+	                	break;
+	                	
+	                              
+	                default:
+	                	System.out.println("What'wrong with you?Enter a proper number!");
+	                	System.out.println();
+	                	break;
+	            }
+				
+	        } while (service == 1|| service == 2|| service == 3|| service == 4);
+	    
+		}
+		
+		else if((x != 1) && (x != 2) && (x != 3) && (x != 0)) {
+			System.out.println("Enter a proper number!");
+		}
+	 
+
+		
+        
+		else {//exit
+			for (y=1; y<4; y++) {
+			  if (y == 1) {
+				  System.out.println("ok,you're exit.");
+				  
+			  }else if (y==2) {
+				  System.out.println("Thank you by using our service.");
+			
+			  }else {
+				  System.out.println("Goodbye!");
+				  
+			  }i++;
+			  
+			  }
+
+		}
+		System.out.println();
+		
+       
+		}while(i<3);	}
+		
+		public static void inputArray(double[][] number){
+			  int row; 
+			  int col;
+			  Scanner input = new Scanner (System.in);
+			  for (row = 0; row < number.length; row++)
+				  for (col = 0; col < number[row].length; col++)
+				   number[row][col] = input.nextInt();
+	}
+		
+		public static void inputArray1(double[][] number){
+			  int row; 
+			  int col;
+			  Scanner input = new Scanner (System.in);
+			  for (row = 0; row < number.length; row++)
+				  for (col = 0; col < number[row].length; col++)
+				   number[row][col] = input.nextInt();
+	}
+
+		public static void printArray(double[][] number){
+			System.out.println("1.Black rice(GRADE A) : " + number[0][0] + " kg/ha");
+			System.out.println("2.Black rice(GRADE B) : " + number[0][1] + " kg/ha");
+	    	System.out.println("3.Black rice(GRADE C) : " + number[0][2] + " kg/ha");
+	    	System.out.println("4.Jasmine rice(GRADE A) : " + number[1][0] + " kg/ha");
+	    	System.out.println("5.Jasmine rice(GRADE B) : " + number[1][1] + " kg/ha");
+	    	System.out.println("6.Jasmine rice(GRADE C) : " + number[1][2] + " kg/ha");
+	    	System.out.println("7.Brown rice(GRADE A) : " + number[2][0] + " kg/ha");
+	    	System.out.println("8.Brown rice(GRADE B) : " + number[2][1] + " kg/ha");
+	    	System.out.println("9.Brown rice(GRADE C) : " + number[2][2] + " kg/ha");
+	    	System.out.println("10.Red Cargo rice(GRADE A) : " + number[3][0] + " kg/ha");
+	    	System.out.println("11.Red Cargo rice(GRADE B) : " + number[3][1] + " kg/ha");
+	    	System.out.println("12.Red Cargo rice(GRADE C) : " + number[3][2] + " kg/ha");
+	    	System.out.println("13.Sticky rice(GRADE A) : " + number[4][0] + " kg/ha");
+	    	System.out.println("14.Sticky rice(GRADE B) : " + number[4][1] + " kg/ha");
+	    	System.out.println("15.Sticky rice(GRADE C) : " + number[4][2] + " kg/ha");
+	    	System.out.println("16.Long grain white rice(GRADE A) : " + number[5][0] + " kg/ha");
+	    	System.out.println("17.Long grain white rice(GRADE B) : " + number[5][1] + " kg/ha");
+	    	System.out.println("18.Long grain white rice(GRADE C) : " + number[5][2] + " kg/ha");
+			
+		}
+		
+		
+		
+
+		 
+		 static int search(double[][] num, int searchValue,int searchValue1){
+			 for (int i=0; i < num.length; i++) {
+				 if( i == searchValue)  {
+					 for (int j=0; j < num.length; j++)
+						 if( j == searchValue1) {
+					  System.out.println(num[i][j] + " kg/ha");}
+					  
+				 }
+			 }
+			 
+			return searchValue;
+	
+
+
+	}
+
+}
