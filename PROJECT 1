@@ -1,0 +1,114 @@
+package project1;
+import java.util.Scanner;
+import project1.BREAD;
+import project1.CAKE;
+import project1.RICE;
+import project1.DESSERTS;
+import project1.FRUITS;
+
+public class Project1 {
+
+
+	public String name;
+
+	public Project1() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int x;
+		int reply;
+		String name;
+		Scanner sc = new Scanner (System.in);
+		
+		System.out.println("Good Morning!");
+		System.out.println("How could we call you?");
+		name = sc.nextLine();
+		System.out.println("Hi! " + name + " Welcome to GROUP6 COMPANY!!!");
+		
+		do{
+			
+			System.out.println("Which following of service do you like?");
+			System.out.println("1.Bread");
+			System.out.println("Price Calculation for Bread");
+			System.out.println("Bill Payment");
+			System.out.println();
+			
+			System.out.println("2.Cake");
+			System.out.println("Calculation for mass of ingredients to make cake for 1 month");
+			System.out.println();
+			
+			
+			System.out.println("3.Rice");
+			System.out.println("Calculate the yield.");
+			System.out.println("Calculate the next harvest amount.");
+			System.out.println("Arranging the inventory.");
+			System.out.println();
+			
+					
+						
+			System.out.println("4.Dessert");
+			System.out.println("Finance calculation and statement of dessert shop ");
+			System.out.println();
+			
+			System.out.println("5.Fruits");
+			System.out.println("Purchasing seeds application");
+			System.out.println();
+			
+			System.out.println("0.Exit");
+			
+			System.out.println("Please enter a number : ");
+			x = sc.nextInt();
+			
+			switch(x) {
+		
+		
+		case 1:
+			System.out.println("Hi,Welcome to HO JUN HAN service! " + name);
+			BREAD bread = new BREAD();
+			System.out.println();
+			break;
+			
+		case 2:
+			System.out.println("Hi,Welcome to DANIEL FIKREY service! " + name);
+			CAKE cake = new CAKE();
+			System.out.println();
+			break;
+		
+		case 3: 
+			System.out.println("Hi,Welcome to HO WAI KIAT service! " + name);
+			RICE rice = new RICE();
+			System.out.println();
+			break;
+			
+		case 4:
+			System.out.println("Hi,Welcome to KOR JUN XIANG application! " + name);
+			DESSERTS desserts = new DESSERTS();
+			System.out.println();
+			break;
+			
+		case 5:
+			System.out.println("Hi,Welcome to NURLAILATUL AQILAH service! " + name);
+			FRUITS fruits = new FRUITS();
+			System.out.println();
+			break;
+			
+		case 0:
+			System.out.println("Are you sure?");
+			System.out.println();
+			break;
+		
+			
+		}
+			System.out.println("Do you want to continue to other food or drink?");
+			System.out.println("1.Yes 2.No");
+			System.out.print("Please enter a number : ");
+		    reply = sc.nextInt();
+		
+	}while (reply == 1);
+		
+		System.out.println("OK,thank you for using our service,please come again!!!");
+	}
+
+}
